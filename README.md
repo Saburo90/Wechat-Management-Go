@@ -1,0 +1,2 @@
+# Wechat-Management-Go
+This is a Wechat official account And applet of WeChat management system. It' s use go program language and use beego framework. The frontend use layui components. The Database use MySQL and NoSQL use Redis.  This project is personal, if you want  commercial use, please contact me first, thanks! If you find any bugs or errors, you can send the PR or comment with issue also can be contact me with wechat. I will be response as quickly as possible. Welcome everyone to mention PR.
