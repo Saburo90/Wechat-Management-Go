@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"Wechat-Management-Go/controllers"
+	"github.com/saburo90/Wechat-Management-Go/controllers"
 	"github.com/astaxie/beego"
 )
 
