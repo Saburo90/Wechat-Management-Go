@@ -44,3 +44,10 @@ CREATE TABLE `wt_user_authority`(
 `createtime` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT "this authority create time",
 `modifytime` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT "this record changing time"
 )ENGINE = INNODB DEFAULT CHARSET = UTF8;
+
+# Table of SYSTEM SETUP
+DROP TABLE IF EXISTS `wt_system_setup`
+CREATE TABLE `wt_system_setup`(
+`id` INT AUTO_INCREMENT PRIMARY KEY,
+``
+)

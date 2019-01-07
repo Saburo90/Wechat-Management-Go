@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Install Program - Powered By WeManago</title>
+    <meta name="keywords" content="WeManago,install program"/>
+    <meta name="description" content="Install Program WeManago"/>
+    <!--<link rel="stylesheet" type="text/css" href="{{.TplStatic}}/css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.css">
+    <!--<link rel="stylesheet" type="text/css" href="/static/Home/default/css/flat-ui.min.css"/>-->
+    <!--<link rel="stylesheet" href="//cdn.bootcss.com/flat-ui/2.2.2/css/flat-ui.min.css">-->
+    <link rel="stylesheet" href="//cdn.staticfile.org/flat-ui/2.3.0/css/flat-ui.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="/static/Home/default/css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/Common/css/jquery.toast.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/Home/default/css/dochub.css?version={{$.Version}}"/>
+    <link rel="shortcut icon" href="/static/Home/default/img/favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-install">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <div class="text-center"><img src="/static/Home/default/img/logo.png" alt="WECHAT-MANAGEMENT"></div>
+                <strong>Thank you for use WECHAT-MANAGEMENT, Please follow the prompts to configure the database to install the program.</strong>
+                </div>
+                <div class="panel-body">
+                    <form action="" method="post" class="wenku-ajax-form">
+                        <div class="form-group">
+                            <label>DataBase Host</label>
+                            <input type="text" required name="host" autocomplete="off" class="form-control">
+                            <p class="help-block">Please configure the database host, if you deploy your project in Docker, please think more result when you use localhost as DB host</p>
+                        </div>
+                        <div class="form-group">
+                            <label>DataBase Port</label>
+                            <input type="number" name="port" autocomplete="off" value="3306"  class="form-control">
+                            <p class="help-block">Only support type of database MySQL, Default port '3306'</p>
+                        </div>
+                        <div class="form-group">
+                            <label>DataBase Name</label>
+                            <input type="text"  autocomplete="off"  name="database" value=""  class="form-control">
+                            <p class="help-block">Please configure the database name of you has been built  <span class="text-danger">UTF8</span> Charset of your database</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Tables Prefix</label>
+                            <input type="text"  autocomplete="off"  name="prefix" value="hc_"  class="form-control">
+                            <p class="help-block">if empty of your tables prefix, then will be set <span class="text-danger">wt_</span> as your tables prefix</p>
+                        </div>
+                        <div class="form-group">
+                            <label>DataBase Username</label>
+                            <input type="text" autocomplete="off" name="username" value=""  class="form-control">
+                            <p class="help-block">Please configure your database user's name</p>
+                        </div>
+                        <div class="form-group">
+                            <label>DataBase Userpwd</label>
+                            <input type="text" autocomplete="off" name="password"  class="form-control">
+                            <p class="help-block">Please configure your database user login password, and the char like  <span class="text-danger">@</span> is not permit </p>
+                        </div>
+                        <div class="form-group wenku-mgt-15px">
+                            <input type="submit" class="btn btn-primary btn-block" value="install program">
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <div class="help-block">Thank you for use WECHAT-MANAGEMENT SYSTEM.
+                    <span class="pull-right">
+                        Powered By <a href="https://github.com/saburo90/Wechat-Management-Go" class="text-primary" target="_blank" title="WeManago">WeManago</a>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+<script src="//apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script src="{{.TplStatic}}/js/bootstrap.min.js"></script>-->
+<script src="//apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="/static/Common/js/jquery.toast.min.js"></script>
+<!--<script src="/static/Common/js/jquery.lazyload.min.js"></script>-->
+<script src="/static/Home/default/js/dochub.js?version={{$.Version}}"></script>
+</body>
+</html>
