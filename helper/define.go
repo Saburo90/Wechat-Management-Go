@@ -20,4 +20,6 @@ var (
 	Segmenter sego.Segmenter
 	// system configure map
 	ConfigMap sync.Map
+	IsInstalled = false
+	AllowedUploadExt = ",xlsx,xls,jpeg,jpg,gif,png"
 )

@@ -35,3 +35,4 @@ func GetConfigBool(cate string, key string) (val bool) {
 	return
 }
 
+
