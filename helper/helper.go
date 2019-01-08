@@ -68,7 +68,10 @@ func InterfaceToInt(itf interface{}) int {
 	return i
 }
 
-// 
+// build url
+// @param prefix the url's prefix
+// @param params the url's query params
+// @return urlStr after assembly url string
 func BuildURL(prefix string, params ...interface{}) (urlStr string) {
 	var (
 		paramsLen int
